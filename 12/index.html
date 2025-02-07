@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce4ec;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            flex-direction: column;
+        }
+        .message {
+            font-size: 18px;
+            color: #d81b60;
+            font-weight: bold;
+            margin-bottom: 20px;
+            max-width: 400px;
+        }
+        .envelope-container {
+            position: relative;
+        }
+        .envelope {
+            width: 300px;
+            height: 200px;
+            background: url('https://i.imgur.com/0V8C6WQ.png') no-repeat center;
+            background-size: cover;
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+        .heart-button {
+            margin-top: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: red;
+        }
+        .letter {
+            display: none;
+            width: 320px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">Close your eyes for a moment and imagine me standing right in front of you, holding your hands, looking straight into your beautiful eyes... because that’s exactly how I wish I could say this to you. But since I can't be there, I’m sending you my heart in words. Open this when you're ready... ❤️</div>
+    <div class="envelope-container">
+        <div class="envelope"></div>
+        <button class="heart-button" onclick="openLetter()">❤️</button>
+    </div>
+    <div class="letter" id="letter">
+        <p>My Love, My Everything, Anjali,</p>
+        <p>From the moment our paths crossed, my heart knew you were someone special. I can still remember the day I first saw you in school—there was an instant connection, something deeper than words could ever express. You became the first girl I ever texted, and from that very moment, you changed my life in ways I never imagined.</p>
+        <p>Back then, when you were at your lowest, broken and weighed down by sadness, all I wanted was to be there for you, to bring even the slightest smile to your face. We talked, we laughed, and in those moments, I found a happiness I never knew existed. With every passing day, my feelings for you grew stronger, and though I expressed them four times, I knew deep down that I would wait for you, no matter how long it took. Because you, Anjali, are worth everything.</p>
+        <p>Then came <b>November 26, 2024</b>, a day I will cherish forever. The day you told me that you had started feeling the same way, though you needed more time. That day, my heart felt a joy so pure, so overwhelming, that I knew—this was it. You were the one I had been waiting for. And even now, after everything, I am more certain than ever that you are the most beautiful chapter of my life.</p>
+        <p>Every moment with you feels magical, like we’ve known each other forever. I never have to pretend, never have to hide, because with you, I am completely myself. Your voice, your smile, even the smallest things about you make my world brighter. I want to be the reason behind your happiness, just as you are for mine. I want to hold your hand, to walk through every storm and every sunshine together.</p>
+        <p>So today, on this Propose Day, I want to say this to you from the depths of my heart:</p>
+        <p><b>I don’t just love you, Anjali—I belong to you.</b></p>
+        <p>I want to stand beside you in every moment, cherish you in every way, and love you endlessly. Not just for today, not just for tomorrow, but <b>forever</b>.</p>
+        <p>Will you be mine, now and always? ❤️</p>
+        <p>Yours, Forever and Always,<br>Adi</p>
+    </div>
+
+    <script>
+        function openLetter() {
+            document.querySelector('.envelope-container').style.display = 'none';
+            document.getElementById('letter').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
